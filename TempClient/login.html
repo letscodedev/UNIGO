@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		#loader {
+			position: fixed;
+			background-color: white;
+			height: 110vh;
+			width: 103%;
+			opacity: 0.9;
+			z-index: 111;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#loader img {
+			height: 100px;
+			width: 100px;
+		}
+
+		.main {
+			/*display: none;*/
+		}
+
+		.hero.is-primary {
+			background-color: #6BF178;
+			color: #fff;
+		}
+	</style>
+
+	<script type="text/javascript" src="script/login.js">
+	</script>
+</head>
+
+<body>
+	<div id="loader" class="columns is-centered" style="display: none;">
+		<img src="https://www.verthpc.com/templates/vert/img/Leafs_5_1.gif">
+	</div>
+	<div class="main">
+		<section class="hero is-primary is-fullheight">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns is-centered">
+						<div class="column is-5-tablet is-4-desktop is-3-widescreen is-12-mobile">
+							<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Tree_logo.png"> -->
+							<form action="" class="box">
+								<div class="field">
+									<label for="" class="label">Email</label>
+									<div class="control has-icons-left">
+										<input type="email" placeholder="e.g. bobsmith@gmail.com" id="email"
+											class="input" required>
+										<span class="icon is-small is-left">
+											<i class="fa fa-envelope"></i>
+										</span>
+									</div>
+								</div>
+								<div class="field">
+									<label for="" class="label">Password</label>
+									<div class="control has-icons-left">
+										<input type="password" placeholder="*******" class="input" id="password"
+											required>
+										<span class="icon is-small is-left">
+											<i class="fa fa-lock"></i>
+										</span>
+									</div>
+								</div>
+								<div class="field">
+									<label for="" class="checkbox">
+										<input type="checkbox">
+										Remember me
+									</label>
+								</div>
+								<div class="field">
+									<button class="button is-success" id="login">
+										Login
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
